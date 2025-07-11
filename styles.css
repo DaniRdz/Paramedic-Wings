@@ -1,0 +1,25 @@
+/* master styles */
+body{
+    margin: 0;
+    font-family: 'Lato',serif;
+}
+
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+    background-color: #2E2E2E;
+}
+.container-wrapper{
+    background-color: #F5F5F5;
+}
+.container-wrapper h1{
+    color: #D72638;
+}
+.container-wrapper h2{
+    color: #FF7F11;
+}
+
+.container-wrapper h3{
+    color: #F4C95D;
+}
