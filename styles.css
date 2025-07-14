@@ -1,7 +1,12 @@
 /* master styles */
 body{
-    margin: 0;
-    font-family: 'Lato',serif;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+
+    font-family: 'Roboto Slab', serif;
 }
 
 .header-wrapper{
@@ -9,11 +14,13 @@ body{
     justify-content: space-between;
     padding: 38px;
     background-color: #2E2E2E;
+    font-size: 2rem;
+    color: #F5F5F5;
 }
 .container-wrapper{
     background-color: #F5F5F5;
 }
-.container-wrapper h1{
+/* .container-wrapper h1{
     color: #D72638;
 }
 .container-wrapper h2{
@@ -22,4 +29,202 @@ body{
 
 .container-wrapper h3{
     color: #F4C95D;
+} */
+/*Hero section styles*/
+.hero-section{
+
+    background-image: url(/images/mexican-food-still-life.jpg);
+    padding: 100px;
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-section > .top-heading{
+
+    padding: 1px 20px;
+    background-color: #2E2E2E;
+    color: #F5F5F5;
+    width: 350px;
+    border-radius: 2px;
+
+}
+
+.hero-section > .bottom-heading{
+
+    background-color: #F4C95D;
+    color: #2E2E2E;
+    padding: 1px 20px;
+    margin-top: 15px;
+    width: 70px;
+    border-radius: 2px;
+}
+
+/*features section styles*/
+
+.feature-section{
+
+    height: 400px;
+    background-color: #F4C95D;
+    border-top: 10px solid white;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: #11122b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0px -26px 79px -8px rgba(0,0,0,0.58);
+}
+
+.feature-section > .column-wrapper {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-section > .column-wrapper > .column {
+
+    padding: 20px;
+    margin: 42px;
+    text-align: center;
+    border-bottom: 5px solid transparent;
+    border-radius: 10px;
+    transition: 1s;
+
+}
+
+.feature-section > .column-wrapper > .column:hover {
+
+    border-bottom: #2E2E2E 5px solid;
+
+}
+
+.feature-section > .column-wrapper > .column :nth-child(1){
+
+    font-size: 3em;
+}
+
+.feature-section > .column-wrapper > .column :nth-child(2){
+
+    font-size: 1.5em;
+    font-weight: 900;
+    height: 50px;
+    transition: 1s;
+}
+
+.feature-section > .column-wrapper > .column :nth-child(2):hover{
+
+    letter-spacing: 1px;
+
+}
+
+.feature-section > .column-wrapper > .column :nth-child(3){
+
+    letter-spacing: 2px;
+}
+.footer{
+    background-color: #2E2E2E;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 450px;
+    margin: -4px;
+}
+
+.footer > .logo-footer img {
+
+    width: 180px;
+    height: 100%;
+    filter: brightness(50%);
+
+}
+
+.footer > .footer-phone-hours{
+    display: flex;
+    justify-content: space-between;
+}
+.footer > .footer-phone-hours span {
+
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1em;
+    letter-spacing: 2px;
+}
+
+.footer > .footer-phone-hours > .Hours {
+
+    color: #F4C95D;
+    font-size: 0.8em;
+}
+
+.footer > .link-wrapper {
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 400px;
+
+}
+
+.footer > .social-media-icons {
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.footer > .social-media-icons a{
+
+    color: #F5F5F5;
+    font-size: 2em;
+    transition: 0.5s;
+
+}
+
+.footer > .social-media-icons a:hover{
+
+    color: #F4C95D;
+
+}
+
+.footer > .copyright-wrapper {
+
+    margin-bottom: 42px;
+    font-size: 0.7em;
+    color: #858585;
+}
+
+.link-wrapper {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link-wrapper > .nav-link a {
+
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: #F5F5F5;
+    text-decoration: none;
+    transition: 0.5s;
+
+}
+
+.link-wrapper > .nav-link {
+
+    width: 70px;
+    text-align: center;
+}
+
+.link-wrapper >.nav-link a:hover{
+
+    color: #F4C95D;
+    letter-spacing: 2px;
+
 }
