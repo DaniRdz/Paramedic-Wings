@@ -24,13 +24,26 @@
   <body>
     <div class="header-wrapper">
       <div>Paramedic Wings</div>
-      <div><i class="fa-solid fa-bars"></i></div>
-      <!--       <div class="nav-link-wrapper">
-        <a href="#" target="_blank">Inicio</a>
-        <a href="#" target="_blank">Menu</a>
-        <a href="#" target="_blank">Ubicacion</a>
-        <a href="#" target="_blank">Contacto</a>
-      </div> -->
+      <div class="toggle-btn"><i class="fa-solid fa-bars"></i></div>
+      <div class="dropdown-menu">
+        <div class="nav-link-wrapper">
+          <a href="#">Inicio</a>
+          <a href="#">Menu</a>
+          <a href="#">Ubicacion</a>
+          <a href="#">Contacto</a>
+        </div>
+        <div class="social-media-icons">
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
     </div>
     <div class="container-wrapper">
       <div class="hero-section">
@@ -111,8 +124,24 @@
       </div>
 
       <div class="copyright-wrapper">
-        &copy; 2025 rdzcore &#124; All right reserved.
+        &copy; 2025 paramedic-wings &#124; All right reserved. powered by
+        <a href="https://danirdz.github.io/rdzcore-dev" target="_blank"
+          >rdzcore</a
+        >
       </div>
     </div>
+    <script>
+      const toogleBtn = document.querySelector(".toggle-btn");
+      const toogleBtnIcon = document.querySelector(".toggle-btn i");
+      const dropDowMenu = document.querySelector(".dropdown-menu");
+      toogleBtn.onclick = function () {
+        dropDowMenu.classList.toggle("open");
+        const isOpen = dropDowMenu.classList.contains("open");
+
+        toogleBtnIcon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
   </body>
 </html>
