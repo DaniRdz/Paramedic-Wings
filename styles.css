@@ -334,3 +334,47 @@ h1, h2, h3, h4, h5, h6{
     letter-spacing: 2px;
 
 }
+
+@media(max-width: 900px){
+    .menu-wrapper > .menu-items {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media(max-width: 615px){
+     .hero-section{
+        padding: 50px 10px;
+    }
+
+    .menu-wrapper > .menu-items {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .feature-section{
+        height: 100%;
+    }
+
+    .feature-section > .column-wrapper{
+        flex-direction: column;
+    }
+
+    .link-wrapper{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .link-wrapper > .nav-link {
+
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 1.5em;
+        width: 100%;
+    }
+
+    .footer {
+        height: 100%;
+    }
+
+}
