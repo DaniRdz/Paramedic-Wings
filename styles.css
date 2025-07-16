@@ -18,6 +18,7 @@ h1, h2, h3, h4, h5, h6{
     background-color: #2E2E2E;
     font-size: 2rem;
     color: #F5F5F5;
+    z-index: 1000;
 }
 
 .dropdown-menu {
@@ -80,17 +81,6 @@ h1, h2, h3, h4, h5, h6{
 .container-wrapper{
     background-color: #F5F5F5;
 }
-/* .container-wrapper h1{
-    color: #D72638;
-}
-.container-wrapper h2{
-    color: #FF7F11;
-}
-
-.container-wrapper h3{
-    color: #F4C95D;
-} */
-/*Hero section styles*/
 .hero-section{
 
     background-image: url(/images/mexican-food-still-life.jpg);
@@ -184,6 +174,44 @@ h1, h2, h3, h4, h5, h6{
 
     letter-spacing: 2px;
 }
+.menu-wrapper {
+    display: grid;
+    background-color: #F5F5F5;
+    color: #2E2E2E;
+    box-shadow: inset 0px -26px 79px -8px rgba(0,0,0,0.58);
+}
+.menu-wrapper > .heading {
+    justify-self: center;
+    color: #D72638;
+
+
+}
+.menu-wrapper > .menu-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 2rem;
+    
+
+}
+
+.menu-wrapper > .menu-items > .menu-item {
+    display: grid;
+    justify-content: center;
+}
+
+.menu-wrapper > .menu-items > .menu-item > .menu-item-img img {
+    height: 150px;
+    filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.5));
+}
+
+.menu-wrapper > .menu-items > .menu-item > .menu-item-name{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 1.5rem;
+    justify-self: center;
+    color: #2E2E2E;
+}
+
 .footer{
     background-color: #2E2E2E;
     font-family: 'Ubuntu Condensed', sans-serif;
@@ -215,8 +243,19 @@ h1, h2, h3, h4, h5, h6{
     font-size: 1em;
     letter-spacing: 2px;
 }
+.footer > .footer-phone-hours > .attention {
+    display: grid;
+}
 
-.footer > .footer-phone-hours > .Hours {
+.footer > .footer-phone-hours > .Phone {
+    align-content: center;
+}
+
+.footer > .footer-phone-hours > .attention > .Days {
+    justify-self: center;
+    font-size: 0.8em;
+}
+.footer > .footer-phone-hours > .attention > .Hours {
 
     color: #F4C95D;
     font-size: 0.8em;
