@@ -174,6 +174,9 @@ h1, h2, h3, h4, h5, h6{
 
     letter-spacing: 2px;
 }
+#menu {
+    scroll-margin-top: 113px;
+}
 .menu-wrapper {
     display: grid;
     background-color: #F5F5F5;
@@ -222,6 +225,9 @@ h1, h2, h3, h4, h5, h6{
     flex-direction: column;
     height: 450px;
     margin: -4px;
+}
+#ubication {
+    scroll-margin-top: 113px;
 }
 
 .footer > .logo-footer img {
