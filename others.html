@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extras</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div>Paramedic Wings</div>
+      <div class="toggle-btn"><i class="fa-solid fa-bars"></i></div>
+      <div class="dropdown-menu">
+        <div class="nav-link-wrapper">
+          <a href="index.html">Inicio</a>
+          <a href="index.html#menu">Menu</a>
+          <a href="index.html#ubication">Ubicacion</a>
+          <a href="#">Contacto</a>
+        </div>
+        <div class="social-media-icons">
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <h1>Extras</h1>
+    <div class="footer">
+      <div class="logo-footer">
+        <div>Paramedic Wings</div>
+      </div>
+      <div class="footer-phone-hours">
+        <span class="Phone"> 3322086952 </span>
+        <span class="attention">
+          <span class="Days">Vie - Dom</span>
+          <span class="Hours">6PM - 12PM </span>
+        </span>
+      </div>
+      <div class="link-wrapper">
+        <div class="nav-link">
+          <a href="index.html">Home</a>
+        </div>
+        <div class="nav-link">
+          <a href="index.html#menu">Menu</a>
+        </div>
+        <div class="nav-link">
+          <a href="#">Contact</a>
+        </div>
+      </div>
+      <div class="social-media-icons">
+        <a href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="#">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+
+        <a href="#">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </div>
+
+      <div class="copyright-wrapper">
+        &copy; 2025 paramedic-wings &#124; All right reserved. powered by
+        <a href="https://danirdz.github.io/rdzcore-dev" target="_blank"
+          >rdzcore</a
+        >
+      </div>
+    </div>
+    <script>
+      const toogleBtn = document.querySelector(".toggle-btn");
+      const toogleBtnIcon = document.querySelector(".toggle-btn i");
+      const dropDowMenu = document.querySelector(".dropdown-menu");
+      toogleBtn.onclick = function () {
+        dropDowMenu.classList.toggle("open");
+        const isOpen = dropDowMenu.classList.contains("open");
+
+        toogleBtnIcon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
+  </body>
+</html>

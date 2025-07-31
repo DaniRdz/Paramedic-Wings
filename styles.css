@@ -4,6 +4,10 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1, h2, h3, h4, h5, h6{
 
     font-family: 'Roboto Slab', serif;
@@ -80,6 +84,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .container-wrapper{
     background-color: #F5F5F5;
+    display: grid;
 }
 .hero-section{
 
@@ -209,6 +214,37 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .menu-wrapper > .menu-items > .menu-item > .menu-item-name{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 1.5rem;
+    justify-self: center;
+    color: #2E2E2E;
+}
+
+.menu-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+    
+}
+
+.menu-bar > .menu-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-bar > .menu-items > .menu-item {
+    display: grid;
+    justify-content: center;
+}
+
+.menu-bar > .menu-items > .menu-item > .menu-item-img img {
+    height: 100px;
+    filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.5));
+}
+
+.menu-bar > .menu-items > .menu-item > .menu-item-name{
     font-family: 'Ubuntu Condensed', sans-serif;
     font-size: 1.5rem;
     justify-self: center;
