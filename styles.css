@@ -84,7 +84,6 @@ h1, h2, h3, h4, h5, h6{
 }
 .container-wrapper{
     background-color: #F5F5F5;
-    display: grid;
 }
 .hero-section{
 
@@ -225,13 +224,25 @@ h1, h2, h3, h4, h5, h6{
     align-items: center;
     justify-content: center;
     padding: 10px;
-
-    
+    position: relative;
+    overflow: hidden;
 }
 
 .menu-bar > .menu-items {
     display: flex;
     justify-content: space-around;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.left-icon, .right-icon {
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
 }
 
 .menu-bar > .menu-items > .menu-item {
@@ -381,6 +392,9 @@ h1, h2, h3, h4, h5, h6{
     .menu-wrapper > .menu-items {
         grid-template-columns: 1fr 1fr;
     }
+    .left-icon, .right-icon {
+        display: block;
+}
 
 }
 

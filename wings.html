@@ -156,6 +156,11 @@
       const toogleBtn = document.querySelector(".toggle-btn");
       const toogleBtnIcon = document.querySelector(".toggle-btn i");
       const dropDowMenu = document.querySelector(".dropdown-menu");
+      const leftIcon = document.querySelector(".left-icon");
+      const rightIcon = document.querySelector(".right-icon");
+      const menuItems = document.querySelector(".menu-items");
+
+      const scrollAmount = 150;
       toogleBtn.onclick = function () {
         dropDowMenu.classList.toggle("open");
         const isOpen = dropDowMenu.classList.contains("open");
@@ -164,6 +169,14 @@
           ? "fa-solid fa-xmark"
           : "fa-solid fa-bars";
       };
+
+      leftIcon.addEventListener("click", () => {
+        menuItems.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+      });
+
+      rightIcon.addEventListener("click", () => {
+        menuItems.scrollBy({ left: scrollAmount, behavior: "smooth" });
+      });
     </script>
   </body>
 </html>

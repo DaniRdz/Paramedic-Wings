@@ -45,7 +45,70 @@
         </div>
       </div>
     </div>
-    <h1>Extras</h1>
+    <div class="container-wrapper">
+      <div class="menu-bar">
+        <div class="left-icon">
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <a href="wings.html">
+                <img src="images/alitas_menu.png" alt="Alitas" />
+              </a>
+            </div>
+            <div class="menu-item-name">Alitas</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <a href="boneless.html">
+                <img src="images/boneless_menu.png" alt="Boneless" />
+              </a>
+            </div>
+            <div class="menu-item-name">Boneless</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <a href="burgers.html">
+                <img src="images/burger_menu.png" alt="Burgers" />
+              </a>
+            </div>
+            <div class="menu-item-name">Burgers</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <a href="fries.html">
+                <img src="images/french-fries_menu.png" alt="Fries" />
+              </a>
+            </div>
+            <div class="menu-item-name">Papas</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <a href="others.html">
+                <img src="images/jalapeo-poppers_menu.png" alt="Extras" />
+              </a>
+            </div>
+            <div class="menu-item-name">Extras</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <a href="drinks.html">
+                <img src="images/bebidas_menu.png" alt="Bebidas" />
+              </a>
+            </div>
+            <div class="menu-item-name">Bebidas</div>
+          </div>
+        </div>
+        <div class="right-icon">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+      <div class="title">
+        <h1>Extras</h1>
+      </div>
+      <div class="image">aqui ira una imagen</div>
+    </div>
     <div class="footer">
       <div class="logo-footer">
         <div>Paramedic Wings</div>
@@ -93,6 +156,11 @@
       const toogleBtn = document.querySelector(".toggle-btn");
       const toogleBtnIcon = document.querySelector(".toggle-btn i");
       const dropDowMenu = document.querySelector(".dropdown-menu");
+      const leftIcon = document.querySelector(".left-icon");
+      const rightIcon = document.querySelector(".right-icon");
+      const menuItems = document.querySelector(".menu-items");
+
+      const scrollAmount = 150;
       toogleBtn.onclick = function () {
         dropDowMenu.classList.toggle("open");
         const isOpen = dropDowMenu.classList.contains("open");
@@ -101,6 +169,14 @@
           ? "fa-solid fa-xmark"
           : "fa-solid fa-bars";
       };
+
+      leftIcon.addEventListener("click", () => {
+        menuItems.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+      });
+
+      rightIcon.addEventListener("click", () => {
+        menuItems.scrollBy({ left: scrollAmount, behavior: "smooth" });
+      });
     </script>
   </body>
 </html>
