@@ -18,17 +18,23 @@ h1, h2, h3, h4, h5, h6{
     top: 0;
     display: flex;
     justify-content: space-between;
-    padding: 38px;
+    padding: 20px;
     background-color: #2E2E2E;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #F5F5F5;
     z-index: 1000;
+    align-items: center;
+}
+
+.header-wrapper > .logo-wrapper  img{
+    width: 130px;
+    height: 100%;
 }
 
 .dropdown-menu {
     position: absolute;
     right: 0;
-    top: 113px;
+    top: 179px;
     height: 100vh;
     width: 0;
     background-color: #2E2E2E;
@@ -308,7 +314,10 @@ h1, h2, h3, h4, h5, h6{
 #ubication {
     scroll-margin-top: 113px;
 }
-
+.footer > .logo-footer img {
+    width: 130px;
+    height: 100%;
+}
 .footer > .footer-phone-hours{
     display: flex;
     justify-content: space-between;
