@@ -434,8 +434,17 @@ h1, h2, h3, h4, h5, h6{
 }
 
 @media(max-width: 615px){
-     .hero-section{
+    .hero-section{
+        width: 100%;
+        max-width: 100%;
         padding: 50px 10px;
+        background-attachment: scroll;
+    }
+    .hero-section > .top-heading {
+        width: 150px;
+    }
+    .hero-section > .bottom-heading {
+        width: 50px;
     }
 
     .menu-wrapper > .menu-items {
