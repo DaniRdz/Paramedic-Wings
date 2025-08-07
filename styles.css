@@ -336,6 +336,7 @@ h1, h2, h3, h4, h5, h6{
 .footer > .footer-phone-hours > .Phone {
     align-content: center;
     text-decoration: none;
+    color: #F5F5F5;
 }
 
 .footer > .footer-phone-hours > .attention > .Days {
