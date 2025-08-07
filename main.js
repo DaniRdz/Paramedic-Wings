@@ -6,6 +6,7 @@ const leftIcon = document.querySelector(".left-icon");
 const rightIcon = document.querySelector(".right-icon");
 const menuItems = document.querySelector(".menu-items");
 const carousel = document.querySelector(".menu-items");
+const internalLinks = document.querySelectorAll('.nav-link-wrapper a[href^="#"]');
 
 toogleBtn.onclick = function () {
   dropDowMenu.classList.toggle("open");
@@ -15,6 +16,13 @@ toogleBtn.onclick = function () {
     ? "fa-solid fa-xmark"
     : "fa-solid fa-bars";
 };
+
+internalLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    dropDowMenu.classList.remove("open");
+    toogleBtnIcon.classList = "fa-solid fa-bars";
+  });
+});
 
 if (leftIcon && rightIcon && menuItems) {
   const scrollAmount = 150;

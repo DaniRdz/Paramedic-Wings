@@ -185,7 +185,7 @@ h1, h2, h3, h4, h5, h6{
     letter-spacing: 2px;
 }
 #menu {
-    scroll-margin-top: 113px;
+    scroll-margin-top: 170px;
 }
 .menu-wrapper {
     display: grid;
@@ -312,7 +312,7 @@ h1, h2, h3, h4, h5, h6{
     margin: -4px;
 }
 #ubication {
-    scroll-margin-top: 113px;
+    scroll-margin-top: 170px;
 }
 .footer > .logo-footer img {
     width: 130px;
