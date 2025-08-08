@@ -28,11 +28,16 @@ if (leftIcon && rightIcon && menuItems) {
   const scrollAmount = 150;
 
   leftIcon.addEventListener("click", () => {
-    menuItems.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+    if (menuItems.scrollLeft > 0) {
+      menuItems.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+    }
   });
 
   rightIcon.addEventListener("click", () => {
-    menuItems.scrollBy({ left: scrollAmount, behavior: "smooth" });
+    const maxScrollLeft = menuItems.scrollWidth - menuItems.clientWidth;
+    if (menuItems.scrollLeft < maxScrollLeft) {
+      menuItems.scrollBy({ left: scrollAmount, behavior: "smooth" });
+    }
   });
 }
 
