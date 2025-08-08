@@ -37,14 +37,20 @@ if (leftIcon && rightIcon && menuItems) {
 }
 
 if (carousel) {
-  window.addEventListener("beforeunload", () => {
-    localStorage.setItem("carouselScroll", carousel.scrollLeft);
+
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "hidden") {
+      localStorage.setItem("carouselScroll", carousel.scrollLeft);
+    }
   });
 
-  window.addEventListener("load", () => {
+  window.addEventListener("DOMContentLoaded", () => {
     const savedScroll = localStorage.getItem("carouselScroll");
-    if (savedScroll) {
-      carousel.scrollLeft = savedScroll;
+    if (savedScroll !== null) {
+      // Esperar un poco para que el layout esté listo
+      setTimeout(() => {
+        carousel.scrollLeft = parseInt(savedScroll, 10);
+      }, 100);
     }
   });
 }
